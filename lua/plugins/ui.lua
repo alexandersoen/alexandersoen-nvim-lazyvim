@@ -33,8 +33,18 @@ return {
       window = {
         position = "current",
       },
+      -- Make opening directory open neo-tree
       filesystem = {
         hijack_netrw_behavior = "open_current",
+      },
+      -- Add relative numbers
+      event_handlers = {
+        {
+          event = "neo_tree_buffer_enter",
+          handler = function()
+            vim.opt_local.relativenumber = true
+          end,
+        },
       },
     },
   },
