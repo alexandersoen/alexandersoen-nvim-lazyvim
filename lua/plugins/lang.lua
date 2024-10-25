@@ -24,7 +24,6 @@ return {
       vim.g.vimtex_compiler_latexmk = {
         ["build_dir"] = "output",
         ["options"] = {
-          "-auxdir=aux",
           "-verbose",
           "-file-line-error",
           "-synctex=1",

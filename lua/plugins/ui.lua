@@ -8,6 +8,8 @@ return {
     opts = {
       options = {
         mode = "tabs",
+        always_show_bufferline = true,
+        separator_style = "slant",
       },
     },
   },
